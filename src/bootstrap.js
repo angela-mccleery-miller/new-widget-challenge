@@ -2,31 +2,34 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {useRoutes, A} from "hookrouter"
 
+import "./style/main.scss"
 import App from "./components/app"
-import Alphabetize from "./components/pages/alphabetize"
-import EvenOrOdd from "./components/pages/evenOrOdd"
+import ColorButton from "./components/pages/colorButton"
+import FizzBuzz from "./components/pages/fizzBuzz"
+import SumNums from "./components/pages/sumNums"
+import popUpPic from "./components/pages/popUpPic"
 
 const routes = {
   "/": () => <App />,
-  "/alphabetize": () => <Alphabetize />,
-  "/evenOrOdd": () => <EvenOrOdd />,
+  "/colorButton": () => <ColorButton />,
+  "/fizzBuzz": () => <FizzBuzz />,
+  "/sumNums": () => <SumNums />,
+  "/popUpPic": () => <PopUpPic />,
   
 };
 
 
 function Main() {
   return (
-    <div>
+    <div className="app">
       <div className="navbar">
-        <A href="/">HOME</A>
-        <A href="/alphabetize">ALPHABETIZE</A>
-        <A href="/evenOrOdd">EVEN or ODD</A>
-        <A href="/fizzBuzz">FIZZBUZZ</A>
-        <A href="/largestNum">LARGEST NUMBER</A>
-        <A href="/pigLatin">PIG LATIN</A>
-        <A href="/randomHex">RANDOM HEX</A>
-        <A href="/removeFirstLast">REMOVE FIRST / LAST</A>
-        <A href="/randomNumber">RANDOM NUMBER</A>
+        <A href="/"><button>HOME</button></A>
+        <A href="/colorButton"><button>COLOR BUTTON</button></A>
+        <A href="/sumNums"><button>SUM IT UP</button></A>
+        <A href="/fizzBuzz"><button>FIZZ BUZZ</button></A>
+        <A href="/popUpPic"><button>POP UP PIC</button></A>
+
+       
 
       </div>
       {useRoutes(routes)}
@@ -39,4 +42,3 @@ function Main() {
 
 
 ReactDOM.render(<Main />, document.querySelector(".app-wrapper"));
-

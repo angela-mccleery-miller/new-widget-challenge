@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+    margin-left: 30px;
+    padding: 20px;
+    margin-top: 75px;
+
+
+
+    button {
+        text-decoration: none;
+        width: 280px;
+        height: 100px;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: orange;
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 15px;
+    }
+}
