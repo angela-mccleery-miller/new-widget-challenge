@@ -7,7 +7,7 @@ import App from "./components/app"
 import ColorButton from "./components/pages/colorButton"
 import FizzBuzz from "./components/pages/fizzBuzz"
 import SumNums from "./components/pages/sumNums"
-import popUpPic from "./components/pages/popUpPic"
+import PopUpPic from "./components/pages/popUpPic"
 
 const routes = {
   "/": () => <App />,

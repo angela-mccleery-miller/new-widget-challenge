@@ -25,12 +25,12 @@ export default class FizzBuzz extends React.Component {
             <button
               onClick={this._decrement.bind(this)}
               className="btn btn-lg btn-default">
-              <i className="fa fa-minus"></i>
+              <i className="fa fa-minus">+</i>
             </button>
             <button
               onClick={this._increment.bind(this)}
               className="btn btn-lg btn-primary">
-              <i className="fa fa-plus"></i>
+              <i className="fa fa-plus">-</i>
             </button>
           </div>
         </div>
